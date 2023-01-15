@@ -38,9 +38,11 @@ function Promedio ()
 
 	precio3 = parseFloat(document.getElementById("txtIdPrecioTres").value);
 
-	promedio = (precio1 + precio2 + precio3) / 3
+	promedio = (precio1 + precio2 + precio3) / 3;
 
-	alert("el promedio es de $" + promedio)
+	promedio = promedio.toFixed(2);
+
+	alert("el promedio es de $" + promedio);
 	
 }
 function PrecioFinal () 
@@ -50,7 +52,7 @@ function PrecioFinal ()
 	let precio2;
 	let precio3;
 	let iva;
-	let resultado;
+	let importeFinal;
 
 
 	precio1 = parseFloat(document.getElementById("txtIdPrecioUno").value);
@@ -59,10 +61,14 @@ function PrecioFinal ()
 
 	precio3 = parseFloat(document.getElementById("txtIdPrecioTres").value);
 
-	iva = (precio1 + precio2 + precio3) * 21 / 100
+	iva = (precio1 + precio2 + precio3) * 21 / 100;
 
-	resultado = precio1 + precio2 + precio3 + iva
+	importeFinal = precio1 + precio2 + precio3 + iva;
 
-	alert("el producto final es de $" + resultado)
+	importeFinal = importeFinal.toFixed(2);
+
+	alert("el producto final es de $" + importeFinal);
+
+	
 
 }
