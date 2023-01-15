@@ -20,21 +20,35 @@ function sumar()
 
 
 
-
+	//asigno variables
 
 	let num1;
 	let num2;
 	let resultado;
 
+
+
+	//le doy valor a las variables con los numeros que eligan los usuarios
+
 	num1 = document.getElementById("txtIdNumeroUno").value;
 
 	num2 = document.getElementById("txtIdNumeroDos").value;
+
+	
+
+	//como son de tipo string, las transformo a tipo number con parseInt
 
 	num1 = parseInt(num1);
 
 	num2 = parseInt(num2);
 
+
+	//sumo la variable num1 y la variable num2 en la variable resultado
+
 	resultado = num1 + num2;
+
+
+	//muestro resultado en alert sumado a una cadena de string
 
 	alert("la suma es " + resultado);
 }
