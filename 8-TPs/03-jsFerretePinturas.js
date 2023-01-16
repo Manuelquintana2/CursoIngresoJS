@@ -49,8 +49,4 @@ function CentigradosFahrenheit ()
 	alert(tempC + " grados centigrados son equivalentes a " + tempF + "grados farenheit");
 
 
-
-
-
-
 }
