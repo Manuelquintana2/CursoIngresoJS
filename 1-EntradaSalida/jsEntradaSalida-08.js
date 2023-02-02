@@ -1,3 +1,5 @@
+/* Quintana Miño Manuel DIV D grupo 2
+*/
 /*
 Debemos lograr tomar Los numeros por ID ,
 transformarlos a enteros (parseInt),realizar la operación correcta y 

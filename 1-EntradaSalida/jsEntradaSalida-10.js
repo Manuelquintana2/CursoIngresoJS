@@ -1,3 +1,5 @@
+/* Quintana Miño Manuel DIV D grupo 2
+*/
 /*
 Debemos lograr tomar el importe por ID.
 Transformarlo a entero (parseInt), luego
@@ -13,11 +15,9 @@ function mostrarAumento()
 
 	importe = parseFloat(document.getElementById("txtIdImporte").value);
 
-	descuento = importe * 25 / 100
+	descuento = importe * 0.75
 
-	NuevoImporte = importe - descuento
-
-	document.getElementById("txtIdResultado").value = NuevoImporte
+	document.getElementById("txtIdResultado").value = descuento
 
 
 

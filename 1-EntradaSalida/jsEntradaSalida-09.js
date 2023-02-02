@@ -1,3 +1,5 @@
+/* Quintana Miño Manuel DIV D grupo 2
+*/
 /*
 Debemos lograr tomar el importe por ID ,
 transformarlo a entero (parseInt), luego
@@ -12,7 +14,7 @@ function mostrarAumento()
 
 	sueldo = parseFloat(document.getElementById("txtIdSueldo").value);
 
-	aumento = sueldo * 10 / 100;
+	aumento = sueldo * 0.1;
 
 	NuevoSueldo = sueldo + aumento;
 
