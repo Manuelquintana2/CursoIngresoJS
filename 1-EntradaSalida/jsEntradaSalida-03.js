@@ -9,7 +9,8 @@ function mostrar()
 	let descuento;
 	let importeTotal;
 	let importeConIva;
-	let valorConDescuento;
+
+//Cambie el ID de la caja de texto y use el ejercicio 3
 
 	valorDeCompra = document.getElementById("txtIdValor").value;
 	valorDeCompra = parseFloat(valorDeCompra);
@@ -27,9 +28,11 @@ function mostrar()
 	importeConIva = parseFloat(importeConIva.toFixed(2))
 
 
-	alert(`el importe bruto es de ${valorDeCompra}, la suma del iva es de
-${iva}, el importe con iva seria de ${importeConIva}, el valor del
-descuento es de ${descuento} y el total a pagar es ${importeTotal}`);
+	alert(`IMPORTE BRUTO: ${valorDeCompra}
+	IVA: ${iva} 
+	IMPORTE CON IVA: ${importeConIva} 
+	VALOR DEL DESCUENTO: ${descuento} 
+	TOTAL A PAGAR: ${importeTotal}`);
 
 }
 

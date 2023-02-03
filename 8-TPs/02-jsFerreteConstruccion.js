@@ -11,48 +11,34 @@ function Rectangulo ()
 	let cantidadAlambre;
 	let perimetro;
 
-
-	largodeTerreno = parseInt(document.getElementById("txtIdLargo").value);
-
-	anchodeTerreno = parseInt(document.getElementById("txtIdAncho").value);
-
+	largodeTerreno = parseFloat(document.getElementById("txtIdLargo").value);
+	anchodeTerreno = parseFloat(document.getElementById("txtIdAncho").value);
+	
 	perimetro = (anchodeTerreno + largodeTerreno) * 2;
+	cantidadAlambre = perimetro * 3;
 
-
-
-	cantidadAlambre = perimetro* 3;
-
-
-
-
-
-	alert("la cantidad de alambre necesaria es de " + cantidadAlambre + " metros");
+	alert("la cantidad de alambre necesaria es de " + cantidadAlambre.toFixed(2) + " metros");
 
 }
 function Circulo () 
 {
-	
 	let perimetro;
 	let radio;
 	let cantidadAlambre;
 	const PI = 3.14;
 
 	radio = parseInt(document.getElementById("txtIdRadio").value);
-
 	perimetro = 2 * PI * radio;
-
-
 	cantidadAlambre = perimetro * 3;
 
 	alert("la cantidad de alambre necesaria es de " + cantidadAlambre + " metros");
 
-
-
-
-
-
 }
+
+
+
 function Materiales () 
+
 {
 	let largodeTerreno;
 	let anchodeTerreno;
@@ -61,18 +47,14 @@ function Materiales ()
 	let cal;
 
 	largodeTerreno = parseInt(document.getElementById("txtIdLargo").value);
-
 	anchodeTerreno = parseInt(document.getElementById("txtIdAncho").value);
 
 	area = largodeTerreno * anchodeTerreno;
-
 	cemento = area * 2
-
 	cal = area * 3
 
-	alert(`Para un contrapiso de ${area}m2 necesito comprar ${cemento} bolsas de cemento y ${cal} bolsas de cal`);
-
-
+	alert(`Para un contrapiso de ${area}m2 
+necesito comprar ${cemento} bolsas de cemento y ${cal} bolsas de cal`);
 
 
 

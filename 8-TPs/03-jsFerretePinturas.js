@@ -6,28 +6,22 @@ function FahrenheitCentigrados ()
 
 {
 	
-	let temperaturafarenheit;
+	let tempF;
 	const CALCULO1 = 32;
 	const CALCULO2 = 5;
 	const CALCULO3 = 9;
-	let gradocentigrados;
+	let tempC;
 
-	temperaturafarenheit = parseFloat(document.getElementById("txtIdTemperatura").value);
+	tempF = document.getElementById("txtIdTemperatura").value;
+	tempF = parseFloat(tempF)
 
-//hacemos temperatur farenheit -32, y el resultado lo multiplicamos por 5 
-//y lo dividimos por 9 y daria la temperatura en centigrados
+/*hacemos temperatur farenheit -32, y el resultado lo multiplicamos por 5 
+y lo dividimos por 9 y daria la temperatura en centigrados*/
+	tempC = (tempF - CALCULO1) * CALCULO2 / CALCULO3;
+	tempC = tempC.toFixed(2);
 
-	gradocentigrados = (temperaturafarenheit - CALCULO1) * CALCULO2 / CALCULO3;
-
-	
-//usamos toFixed para restar decimales
-
-	gradocentigrados = gradocentigrados.toFixed(4);
-
-	alert(temperaturafarenheit + " grados farenheit son equivalentes a " + gradocentigrados + " grados centigrados");
-
-
-
+	alert(`${tempF} grados fahrenheit es igual a
+${tempC} grados centigrados`);
 
 }
 
@@ -40,13 +34,13 @@ function CentigradosFahrenheit ()
 	const CALCULO2 = 5;
 	const CALCULO3 = 9;
 
-	tempC = parseFloat(document.getElementById("txtIdTemperatura").value);
-
+	tempC = document.getElementById("txtIdTemperatura").value;
+	tempC = parseFloat(tempC)
 	tempF = tempC * CALCULO3 / CALCULO2 + CALCULO1;
+	tempF = tempF.toFixed(2);
 
-	tempF = tempF.toFixed(4);
-
-	alert(tempC + " grados centigrados son equivalentes a " + tempF + "grados farenheit");
+	alert(`${tempC} grados centigrados es igual a 
+${tempF} grados fahrenheit`);
 
 
 }
