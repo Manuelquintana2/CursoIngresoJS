@@ -17,7 +17,8 @@ function Rectangulo ()
 	perimetro = (anchodeTerreno + largodeTerreno) * 2;
 	cantidadAlambre = perimetro * 3;
 
-	alert("la cantidad de alambre necesaria es de " + cantidadAlambre.toFixed(2) + " metros");
+	alert(`la cantidad de alambre necesaria es
+de ${cantidadAlambre} metros`);
 
 }
 function Circulo () 
@@ -31,12 +32,10 @@ function Circulo ()
 	perimetro = 2 * PI * radio;
 	cantidadAlambre = perimetro * 3;
 
-	alert("la cantidad de alambre necesaria es de " + cantidadAlambre + " metros");
+	alert(`la cantidad de alambre necesaria es
+de ${cantidadAlambre} metros`);
 
 }
-
-
-
 function Materiales () 
 
 {
