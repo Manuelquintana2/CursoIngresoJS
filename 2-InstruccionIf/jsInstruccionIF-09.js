@@ -1,3 +1,4 @@
+//Quintana Miño Manuel DIV D grupo 2
 function mostrar()
 {
 	let numeroRandom;

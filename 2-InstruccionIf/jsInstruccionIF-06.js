@@ -17,12 +17,9 @@ sino es mayor de edad*/
 	else if(edad<18)
 		{alert("es adolecente");}
 
-	else if (edad<65)
+	else 
 		{alert("es adulto");}
-	else
-		{alert("es anciano");}
-
-
+	
 
 alert("fin de la funcion");
 

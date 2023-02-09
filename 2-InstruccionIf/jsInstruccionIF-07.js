@@ -1,21 +1,14 @@
+//Quintana Miño Manuel DIV D grupo 2
 function mostrar()
 {
 	
 	let edad;
-
 	let estadoCivil;
-
 	
-
-
 	edad = parseInt(document.getElementById("txtIdEdad").value);
-
 	estadoCivil = document.getElementById("estadoCivil").value;
-
-
-
-	if (estadoCivil!="Soltero" && edad<18)
-
+	
+	if (estadoCivil != "Soltero" && edad < 18)
 	 {alert ("es muy pequeño para no ser soltero")}
 
 
