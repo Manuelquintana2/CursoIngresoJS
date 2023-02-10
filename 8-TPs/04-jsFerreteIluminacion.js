@@ -10,5 +10,83 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
  */
 function CalcularPrecio () 
 {
+    let lamparas;
+    let marca;
+    const PRECIO = 35;
+    let precioFinal;
+
+    lamparas = document.getElementById("txtIdCantidad").value;
+    lamparas = parseInt(lamparas)
+    marca = document.getElementById("Marca").value;
+
+    if (lamparas > 5) 
+    {
+        precioFinal = PRECIO * lamparas * 0.50;
+        document.getElementById("txtIdprecioDescuento").value = precioFinal;
+    }
+
+    else 
+    {
+        if (lamparas == 5 && marca == "ArgentinaLuz") 
+        {
+            precioFinal = PRECIO * lamparas * 0.60;
+            document.getElementById("txtIdprecioDescuento").value = precioFinal;
+        }
+        else 
+        {
+            if (lamparas == 5 && marca != "ArgentinaLuz") 
+            {
+                precioFinal = PRECIO * lamparas * 0.70;
+                document.getElementById("txtIdprecioDescuento").value = precioFinal;
+            }
+            else 
+            {
+                if ((lamparas == 4) && (marca == "ArgentinaLuz" || marca == "FelipeLamparas") ) 
+                {
+                    precioFinal = PRECIO * lamparas * 0.75;
+                    document.getElementById("txtIdprecioDescuento").value = precioFinal;
+                }
+                else
+                {
+                    if (lamparas == 4 && marca != "ArgentinaLuz" && marca != "FelipeLamparas") 
+                    {
+                        precioFinal = PRECIO * lamparas * 0.80;
+                        document.getElementById("txtIdprecioDescuento").value = precioFinal;
+                    }
+                    else
+                    {
+                        if (lamparas == 3 && marca == "ArgentinaLuz") 
+                        {
+                            precioFinal = PRECIO * lamparas * 0.85;
+                            document.getElementById("txtIdprecioDescuento").value = precioFinal;
+                        }
+                        else
+                        {
+                            if (lamparas == 3 && marca == "FelipeLamparas") 
+                            {
+                                precioFinal = PRECIO * lamparas * 0.90;
+                                document.getElementById("txtIdprecioDescuento").value = precioFinal;
+                            }
+                            else
+                            {
+
+                                if (lamparas == 3 && marca != "ArgentinaLuz" && marca != "FelipeLamparas") 
+                                {
+                                    precioFinal = PRECIO * lamparas * 0.95;
+                                    document.getElementById("txtIdprecioDescuento").value = precioFinal;
+                                }
+                                
+                            }
+                        }
+                    }
+                }  
+            }
+        }
+    }
+    if (precioFinal > 120) 
+    {   
+        precioFinal = precioFinal * 1.10
+        alert(`El precio final con ingresos brutos es de ${precioFinal}`)
+    }
  	
 }
