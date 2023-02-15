@@ -1,10 +1,12 @@
+//Quintana Miño Manuel DIV D grupo 2
 function mostrar()
 {
 	let mes;
 
 	mes = document.getElementById("txtIdMes").value;
 
-	switch(mes){
+	switch(mes)
+	{
 		case "Enero":
 			alert("que comiences bien el año");
 			break;

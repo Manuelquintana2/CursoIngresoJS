@@ -5,17 +5,17 @@ function mostrar()
 	destino = document.getElementById("txtIdDestino").value;
 
 	switch(destino){
-	case "Bariloche"
+	case "Bariloche":
 		alert("Oeste");
 		break;
-	case "Cataratas"
+	case "Cataratas":
 		alert("Norte");
 		break;
-	case "Mar del plata"
+	case "Mar del plata":
 		alert("Este");
 		break;
-	case "Ushuaia"
-		alert("Sue");
+	case "Ushuaia":
+		alert("Sur");
 		break;
 
 	}
