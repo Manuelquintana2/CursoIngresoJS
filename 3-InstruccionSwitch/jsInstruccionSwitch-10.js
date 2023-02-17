@@ -1,3 +1,4 @@
+//Manuel Quintana Miño DIV D Grupo 2
 function mostrar()
 {
 	let estacion;
