@@ -1,21 +1,43 @@
-/*
+/*Manuel Quintana Miño DIV D Grupo 2
 Al presionar el botón pedir  números  hasta que el usuario quiera,
 mostrar el número máximo y el número mínimo ingresado.*/
 function mostrar()
-{	// declarar variables
-	var banderaDelPrimero;
-	var numeroIngresado;
-	var numeroMaximo;
-	var numeroMinimo;
-	var respuesta;
-	//iniciar variables
-	banderaDelPrimero="es el primero";
-	respuesta='si';
-	while(respuesta=="si")
+{	
+	let banderaDelPrimero = false;
+	let seguir = true;
+	let numeroIngresado;
+	let maximo;
+	let minimo;
+
+	while(seguir == true)
 	{
-		
-		respuesta=prompt("desea continuar?");
+		numeroIngresado = prompt("Ingese un numero");
+		numeroIngresado = parseInt(numeroIngresado);	
+
+		if (banderaDelPrimero == false) 
+		{
+			 maximo = numeroIngresado;
+			 minimo = numeroIngresado;
+			banderaDelPrimero = true;
+		}
+		else
+		{
+			if (numeroIngresado > maximo) 
+			{
+				maximo = numeroIngresado;
+			}
+			else
+			{
+				if (numeroIngresado < minimo) 
+				{
+					minimo = numeroIngresado;
+				}
+				
+			}
+		}
+		seguir = confirm("Desea seguir?")
 	}
-	txtIdMaximo.value=numeroMaximo;
-	txtIdMinimmo.value=numeroMinimo;
-}//FIN DE LA FUNCIÓN
+	document.getElementById("txtIdMaximo").value = maximo;
+	document.getElementById("txtIdMinimo").value = minimo;
+}
+//FIN DE LA FUNCIÓN

@@ -8,18 +8,11 @@ en el cuadro de texto "RESULTADO".*/
 function mostrarAumento()
 {
 
-	let sueldo;
-	let aumento;
-	let NuevoSueldo;
+	let mayorQue;
 
-	sueldo = parseFloat(document.getElementById("txtIdSueldo").value);
+	mayorQue = 5 != 6;
 
-	aumento = sueldo * 0.1;
-
-	NuevoSueldo = sueldo + aumento;
-
-	document.getElementById("txtIdResultado").value = NuevoSueldo;
-
+	alert(mayorQue);
 	
 
 

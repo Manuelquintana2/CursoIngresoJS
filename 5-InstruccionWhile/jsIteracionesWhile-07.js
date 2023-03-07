@@ -1,4 +1,4 @@
-/*
+/*Manuel Quintana Miño DIV D Grupo 2
 Al presionar el botón pedir  números  hasta que el USUARIO QUIERA 
 e informar la suma acumulada y el promedio.
 */
@@ -6,9 +6,8 @@ function mostrar()
 {
 	let seguir;
 	let numeros;
-	let suma = 0;
+	let contador = 0;
 	let promedio;
-	let veces = 0;
 
 	do
 	{	
@@ -16,12 +15,11 @@ function mostrar()
 		numeros = parseInt(numeros);
 		seguir = prompt("quiere seguir sumando numeros?");
 		suma = suma + numeros;
-		veces = veces + 1;
+		contador = contador + 1;
 
 	}while(seguir == "si"); 
 
-
-	promedio = suma / veces;
+	promedio = suma / contador;
 	document.getElementById("txtIdSuma").value = suma;
 	document.getElementById("txtIdPromedio").value = promedio;
 
